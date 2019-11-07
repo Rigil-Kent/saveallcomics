@@ -1,2 +1,5 @@
 <h1>Huzzah! It Worked!</h1>
+<h2>Download {{ title }}</h2>
+{% set download = title + '/' + title + '.cbr' %}
+<button><a href="{{ url_for('static', filename='download/' + download) }}">{{ title }}</a></button>
 <a href="{{ url_for('main.index') }}">&laquo; Back to Home</a>

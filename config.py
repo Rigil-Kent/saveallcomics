@@ -21,6 +21,7 @@ class Config(object):
         'sqlite:///' + os.path.join(basedir, 'app.db')
     UPLOAD_FOLDER = os.path.join(basedir, 'app/static/uploads')
     STASH_FOLDER = os.path.join(UPLOAD_FOLDER, 'stash')
+    DOWNLOAD_FOLDER = os.path.join(basedir, 'app/static/download')
     CLOUD_PLATFORM = 'aws'
 
     @staticmethod
