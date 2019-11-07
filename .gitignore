@@ -1,0 +1,10 @@
+env
+*.zip
+*.cbr
+*.cbz
+*.cfg
+*.jpg
+settings.json
+.flaskenv
+*.db
+__pycache__
