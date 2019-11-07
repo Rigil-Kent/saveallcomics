@@ -1,0 +1,28 @@
+input::-webkit-input-placeholder, input::-moz-placeholder, :input-moz-placeholder, input:-ms-input-placeholder {
+    text-align: center;
+}
+
+.jumbotron {
+    position: relative;
+    background: url(../esm-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+
+.jumbo-info {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    color: white;
+}
+
+
+.jumbo-info h1 {
+    font-weight: 900;
+}
+
+
+.cover {
+    height: 300px;
+}

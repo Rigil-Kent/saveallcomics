@@ -10,6 +10,7 @@ def create_comic_archive(title, folder):
     output = shutil.make_archive(title, 'zip', folder)
     os.rename(output, os.path.join(folder, title +'.cbr'))
     print('Performing folder cleanup...')
+    ignore = ('.cbr', '000.jpg')
     for img in os.listdir(folder):
-        if not img.endswith('.cbr'):
+        if not img.endswith(ignore):
             os.remove(os.path.join(folder, img))

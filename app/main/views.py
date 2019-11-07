@@ -48,6 +48,8 @@ def index():
     if form.validate_on_submit():
         soup = ripper.get_soup_obj(form.search.data, headers)
         download_comic_files(soup)
-        return render_template('success.html', title=ripper.get_title(soup))
+        title = ripper.get_title(soup)
+        cover = title + ' 000.jpg'
+        return render_template('success.html', title=title, cover=cover)
 
     return render_template('index.html', form=form)
